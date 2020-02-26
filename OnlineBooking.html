@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Entry Booking</title>
+    <style>
+         h1{
+            font-family: Lucida Calligraphy;
+            font-size: 30px;
+         }
+         th, td {
+      padding: 15px;
+         }
+         table{
+            border: 1px solid;
+         }
+
+         
+    </style>
+  
+</head>
+
+    <body style="background-color: powderblue;"></body>
+		<h1><center>UP Mindanao Airline Express<br>Online Booking</center></h1>
+        <table>
+        <h2>Passenger and Flight Details:</h2>
+        <p>Last Name:
+          <input type="text" placeholder="e.g Dela Cruz" id="n1"></p>
+        <p>First Name:
+          <input type="text" placeholder="e.g Juan"id="n2"></p>
+        <label for="gender">Gender:</label>
+        <input list="n3" name="gender">
+        <datalist id="n3" name="gender"> 
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </datalist>
+        <p>Email Address:
+          <input type="text" placeholder="e.g juan@gmail.com"id="n4"></p>
+        <p>Origin: 
+            <input type="text" placeholder="e.g Malaysia" id="n5"></p>
+        <p>Destination: 
+            <input type="text" placeholder="e.g Philippines" id="n6"></p>
+        <p>Departure Date:
+            <input type="date" placeholder="26/02/2020" id="n7"></p>
+        <p>Return date: 
+            <input type="date" placeholder="26/02/2020" id="n8"></p>
+    	<button onclick="book();">Submit</button>
+        </table>
+		<script src="OnlineBooking.js"> </script>
+	</body>
+</html>
